@@ -3,6 +3,8 @@ const puppeteer = require("puppeteer-extra");
 const pluginStealth = require("puppeteer-extra-plugin-stealth");
 const { executablePath } = require("puppeteer");
 
+const port = 3000;
+
 const app = express();
 
 app.get("/", async (req, res) => {
